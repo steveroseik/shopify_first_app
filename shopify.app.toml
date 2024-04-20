@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "1a87b8eabfede46ce542a54d3d323e11"
+name = "migrator-typescript"
+handle = "migrator-typescript"
+application_url = "https://affiliate-monsters-associated-kurt.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "quickstart-9393e1e2.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_orders,read_products,write_orders,write_products"
+
+[auth]
+redirect_urls = [
+  "https://affiliate-monsters-associated-kurt.trycloudflare.com/auth/callback",
+  "https://affiliate-monsters-associated-kurt.trycloudflare.com/auth/shopify/callback",
+  "https://affiliate-monsters-associated-kurt.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-01"
+
+[pos]
+embedded = false
